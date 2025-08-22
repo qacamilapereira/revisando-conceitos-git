@@ -7,17 +7,52 @@
 </head>
 <body>
     <h1> Aprendendo sobre Git com Fernanda Kipper no Youtube </h1>
-    <h2> Conceitos básicos </h2>
+    <h2> Conceitos básicos </h2><br>
     <h2> Iniciando o Git no Projeto </h2>
-    <p> Comando "git init" </p>
-
+    <p>  git init </p>
     <h2> Adicionando num estágio para commit  </h2>
-    <p> "git add ."  <br> 
-        "git status" </p>
+    <p>  git add . </p>
+    <h2> Para adicionar apenas um arquivo </h2>
+    <p>  git add NomeDoArquivo.extensão <br>
+         git status </p>
     <h2> Primeiro commit  </h2>
-    <p> "git commit -m "Primeiro commit" " </p>
-    <br>
-    <br> 
+    <p> git commit -m 'Primeiro commit' </p>
+    <h2> Visualizando o histórico de commits  </h2>
+    <p> git log <br>
+        Para sair do modo de visualização do git log no VS Code, pressione a tecla q. 
+        Isso funciona porque o git log utiliza um programa como o less por padrão, 
+        que permite rolar o conteúdo, e o comando q encerra essa visualização e o programa do pager.
+     </p>
+    <h2> Para ver as diferenças  </h2>
+    <p> git diff </p>
+    <h2> Como descartar as alterações? E não quer "commitar" </h2>
+    <p> No caso de modificar errado.<br>
+        git restore NomeDoArquivo.extensão<br>
+        Ele tira as modificações feitas e volta para última versão.</p>
+    <h2> Criando e mesclando branches </h2>
+    <p> Cada pessoa que está trabalhando no projeto cria as suas ramificações. <br>
+        git branch (para mostrar em qual branch está) <br>
+        Para criar uma nova branch> <br>
+        git checkout (saindo da branch que está e indo para uma nova) <br>
+        git checkout -b nome-da-branch (cria uma nova branch a partir dessa que está) <br>
+        git checkout main (para voltar para a master)<br>
+        git merge nome-da-branch (para enviar as alterações de uma branch para a branch principal)<br>
+    </p>
+    <h2> Repositórios remotos (ou cloud/nuvem) </h2>
+    <p> Publicar branch no Github, por exemplo.<br>
+        Outros exemplo: GitLab, ...<br>
+        Crie um novo repositório no seu GitHub para o seu projeto.<br>
+        Instruções:
+        ..create a new repository on the command line<br>
+        echo "#meu-projeto" >> README.md<br>
+        git init <br>
+        git add README.bd<br>
+        git commit -m "first commit" <br>
+        git branch -M main <br>
+        git remote add origin https://github.com/suaconta/seurepositorio<br>
+        git push -u origin main (para enviar o código para o repositório remoto <br>
+
+    </p>
     <a href="https://git-scm.com/" > Link do website do Git </a><br><br>
     <a href="https://www.youtube.com/live/pyM5QLS2h6M " > Link do vídeo da Fernanda no Youtube </a>
     <br>
